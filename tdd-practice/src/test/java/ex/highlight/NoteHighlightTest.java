@@ -1,4 +1,4 @@
-package ex;
+package ex.highlight;
 
 import org.junit.jupiter.api.Test;
 
