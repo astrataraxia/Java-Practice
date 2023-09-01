@@ -1,6 +1,6 @@
 package ex.gradeadvancement.data;
 
-public class TargetGen {
+public class TargetsGen {
     public Targets gen() {
         return null;
     }

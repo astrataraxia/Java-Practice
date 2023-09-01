@@ -1,5 +1,5 @@
 package ex.gradeadvancement.data;
 
 public enum AdvanceState {
-    COMPLETED, GENERATING
+    COMPLETED, APPLY_FAILED, GENERATING
 }

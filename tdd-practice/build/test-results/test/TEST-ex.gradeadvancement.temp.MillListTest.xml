@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ex.gradeadvancement.temp.MillListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-01T03:20:59" hostname="YONG" time="0.106">
+  <properties/>
+  <testcase name="MillionUserTest()" classname="ex.gradeadvancement.temp.MillListTest" time="0.106"/>
+  <system-out><![CDATA[before -> 240
+after -> 177
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
