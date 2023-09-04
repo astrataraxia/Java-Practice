@@ -1,9 +1,13 @@
-package tdd.practice.tddpractice.gradeadvancement.data;
+package tdd.practice.tddpractice.gradeadvancement.service;
 
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Service;
+import tdd.practice.tddpractice.gradeadvancement.data.Targets;
+import tdd.practice.tddpractice.gradeadvancement.data.User;
 
 import java.util.List;
 
+@Service
 public class TargetsGen {
 
     private JdbcTemplate jdbcTemplate;

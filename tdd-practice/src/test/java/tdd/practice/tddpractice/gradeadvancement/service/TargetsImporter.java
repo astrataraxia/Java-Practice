@@ -1,5 +1,8 @@
-package tdd.practice.tddpractice.gradeadvancement.data;
+package tdd.practice.tddpractice.gradeadvancement.service;
 
+import org.springframework.stereotype.Service;
+import tdd.practice.tddpractice.gradeadvancement.data.Targets;
+import tdd.practice.tddpractice.gradeadvancement.data.User;
 import tdd.practice.tddpractice.gradeadvancement.exception.NoTargetsFileException;
 import tdd.practice.tddpractice.gradeadvancement.exception.TargetsFileBadFormatException;
 
@@ -8,6 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 
+@Service
 public class TargetsImporter {
 
     public Targets imporTargets(Path path) {

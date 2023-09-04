@@ -1,4 +1,8 @@
-package tdd.practice.tddpractice.gradeadvancement.data;
+package tdd.practice.tddpractice.gradeadvancement.service;
+
+import org.springframework.stereotype.Service;
+import tdd.practice.tddpractice.gradeadvancement.data.Targets;
+import tdd.practice.tddpractice.gradeadvancement.data.User;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -6,6 +10,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 
+@Service
 public class TargetsExporter {
     public void export(Path path, Targets targets) {
         try (BufferedWriter bw = Files.newBufferedWriter(path)) {

@@ -1,18 +1,18 @@
-package tdd.practice.tddpractice.gradeadvancement;
+package tdd.practice.tddpractice.gradeadvancement.test;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-import tdd.practice.tddpractice.gradeadvancement.data.AdvanceApplier;
+import tdd.practice.tddpractice.gradeadvancement.service.AdvanceApplier;
 import tdd.practice.tddpractice.gradeadvancement.data.AdvanceResult;
 import tdd.practice.tddpractice.gradeadvancement.data.AdvanceState;
 import tdd.practice.tddpractice.gradeadvancement.data.ApplyResult;
 import tdd.practice.tddpractice.gradeadvancement.service.GradeAdvanceService;
-import tdd.practice.tddpractice.gradeadvancement.data.States;
+import tdd.practice.tddpractice.gradeadvancement.service.States;
 import tdd.practice.tddpractice.gradeadvancement.data.Targets;
-import tdd.practice.tddpractice.gradeadvancement.data.TargetsExporter;
-import tdd.practice.tddpractice.gradeadvancement.data.TargetsGen;
-import tdd.practice.tddpractice.gradeadvancement.data.TargetsImporter;
+import tdd.practice.tddpractice.gradeadvancement.service.TargetsExporter;
+import tdd.practice.tddpractice.gradeadvancement.service.TargetsGen;
+import tdd.practice.tddpractice.gradeadvancement.service.TargetsImporter;
 
 import java.io.IOException;
 import java.nio.file.Files;

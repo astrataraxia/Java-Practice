@@ -1,8 +1,8 @@
-package tdd.practice.tddpractice.gradeadvancement;
+package tdd.practice.tddpractice.gradeadvancement.test;
 
 import org.junit.jupiter.api.Test;
 import tdd.practice.tddpractice.gradeadvancement.data.Targets;
-import tdd.practice.tddpractice.gradeadvancement.data.TargetsExporter;
+import tdd.practice.tddpractice.gradeadvancement.service.TargetsExporter;
 import tdd.practice.tddpractice.gradeadvancement.data.User;
 
 import java.io.IOException;

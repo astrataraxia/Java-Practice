@@ -1,10 +1,10 @@
-package tdd.practice.tddpractice.gradeadvancement;
+package tdd.practice.tddpractice.gradeadvancement.test;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.util.FileCopyUtils;
 import tdd.practice.tddpractice.gradeadvancement.data.AdvanceState;
-import tdd.practice.tddpractice.gradeadvancement.data.States;
+import tdd.practice.tddpractice.gradeadvancement.service.States;
 
 import java.io.FileWriter;
 import java.io.IOException;

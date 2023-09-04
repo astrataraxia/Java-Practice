@@ -1,34 +1,38 @@
 package tdd.practice.tddpractice.gradeadvancement.service;
 
-import tdd.practice.tddpractice.gradeadvancement.data.AdvanceApplier;
+import org.springframework.stereotype.Service;
 import tdd.practice.tddpractice.gradeadvancement.data.AdvanceResult;
 import tdd.practice.tddpractice.gradeadvancement.data.AdvanceState;
-import tdd.practice.tddpractice.gradeadvancement.data.States;
 import tdd.practice.tddpractice.gradeadvancement.data.Targets;
-import tdd.practice.tddpractice.gradeadvancement.data.TargetsExporter;
-import tdd.practice.tddpractice.gradeadvancement.data.TargetsGen;
-import tdd.practice.tddpractice.gradeadvancement.data.TargetsImporter;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+@Service
 public class GradeAdvanceService {
 
+    public static final Path DEFAULT_TARGETS_FILE = Paths.get(".", "targets");
+    private Path targetsFilePath = DEFAULT_TARGETS_FILE;
     private States states;
     private TargetsGen targetsGet;
     private TargetsExporter targetsExporter;
     private AdvanceApplier advanceApplier;
     private TargetsImporter targetsImporter;
-    private final Path targetsFilePath = Paths.get("target/targets");
+
     public GradeAdvanceService(States states,
                                TargetsGen targetsGet,
                                TargetsExporter targetsExporter,
-                               AdvanceApplier advanceApplier, TargetsImporter targetsImporter) {
+                               AdvanceApplier advanceApplier,
+                               TargetsImporter targetsImporter) {
         this.states = states;
         this.targetsGet = targetsGet;
         this.targetsExporter = targetsExporter;
         this.advanceApplier = advanceApplier;
         this.targetsImporter = targetsImporter;
+    }
+
+    public void setTargetsFilePath(Path targetsFilePath) {
+        this.targetsFilePath = targetsFilePath;
     }
 
     public AdvanceResult advance() {
