@@ -6,8 +6,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import tdd.practice.tddpractice.gradeadvancement.data.GivenAssertHelper;
 import tdd.practice.tddpractice.gradeadvancement.data.Targets;
-import tdd.practice.tddpractice.gradeadvancement.service.TargetsGen;
 import tdd.practice.tddpractice.gradeadvancement.data.User;
+import tdd.practice.tddpractice.gradeadvancement.service.TargetsGen;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

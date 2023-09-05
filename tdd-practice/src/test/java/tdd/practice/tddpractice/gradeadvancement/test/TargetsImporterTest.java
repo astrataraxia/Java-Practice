@@ -3,10 +3,10 @@ package tdd.practice.tddpractice.gradeadvancement.test;
 import org.junit.jupiter.api.Test;
 import org.springframework.util.FileCopyUtils;
 import tdd.practice.tddpractice.gradeadvancement.data.Targets;
-import tdd.practice.tddpractice.gradeadvancement.service.TargetsImporter;
 import tdd.practice.tddpractice.gradeadvancement.data.User;
 import tdd.practice.tddpractice.gradeadvancement.exception.NoTargetsFileException;
 import tdd.practice.tddpractice.gradeadvancement.exception.TargetsFileBadFormatException;
+import tdd.practice.tddpractice.gradeadvancement.service.TargetsImporter;
 
 import java.io.FileWriter;
 import java.io.IOException;

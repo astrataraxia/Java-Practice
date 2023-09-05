@@ -4,15 +4,13 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.test.context.ActiveProfiles;
-import tdd.practice.tddpractice.gradeadvancement.data.GivenAssertHelper;
-import tdd.practice.tddpractice.gradeadvancement.service.AdvanceApplier;
 import tdd.practice.tddpractice.gradeadvancement.data.ApplyResult;
+import tdd.practice.tddpractice.gradeadvancement.data.GivenAssertHelper;
 import tdd.practice.tddpractice.gradeadvancement.data.GradeCount;
 import tdd.practice.tddpractice.gradeadvancement.data.Targets;
 import tdd.practice.tddpractice.gradeadvancement.data.User;
+import tdd.practice.tddpractice.gradeadvancement.service.AdvanceApplier;
 
 import java.util.Arrays;
 import java.util.Collection;

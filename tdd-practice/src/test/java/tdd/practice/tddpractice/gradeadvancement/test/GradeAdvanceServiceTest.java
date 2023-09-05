@@ -108,4 +108,15 @@ public class GradeAdvanceServiceTest {
         then(mockExporter).shouldHaveNoInteractions();
         then(mockApplier).should().apply(Mockito.eq(targets));
     }
+
+    @Test
+    void importFail() {
+        states.set(AdvanceState.APPLY_FAILED);
+        Targets targets = new Targets(null);
+        given(mockImporter.imporTargets(any(Path.class)))
+                .willThrow(new RuntimeException("!"));
+
+        AdvanceResult result= service.advance();
+        assertThat(result).isEqualTo(AdvanceResult.TARGET_IMPORT_FAILED);
+    }
 }
