@@ -9,8 +9,5 @@
         <module name="parser-cal" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="parser-cal" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>

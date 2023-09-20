@@ -17,7 +17,7 @@ public class TargetsGen {
     }
 
     public Targets gen() {
-        List<User> users = jdbcTemplate.query("select * from stdinfo",
+        List<User> users = jdbcTemplate.query("select * from student",
                 (rs, rowNum) -> new User(rs.getInt("std_id"), rs.getInt("std_grade")));
         return new Targets(users);
     }
